@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "api/random.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "api/random.py"
+        }
+    ]
+}
